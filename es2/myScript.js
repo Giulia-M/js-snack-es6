@@ -39,8 +39,9 @@ for (let i = 0; i < squadre.length; i++) {
 
     //destructuring di un object
     var { nome, falliSubiti } = squadraDaAnalizzare
+    //array di oggetti 
     specificheSquadra.push({ nome, falliSubiti })
-    console.log(` ${nome}  ${falliSubiti} `);
+    console.log(` ${nome} e i falli subiti sono ${falliSubiti} `);
 
 }
 console.log(squadre)
