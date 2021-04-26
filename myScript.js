@@ -22,7 +22,7 @@ var biciDaCorsa = [
 
 function check(array) {
     //recupero il primo oggetto dell'array con uno specifico peso 
-    var pesoMinore = biciDaCorsa[0].peso
+    var pesoMinore = array[0].peso
   
     var biciPiuLeggera;
 
