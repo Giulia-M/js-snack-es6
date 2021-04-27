@@ -21,23 +21,28 @@ var biciDaCorsa = [
 
 
 function check(array) {
-    //recupero il primo oggetto dell'array con uno specifico peso 
-    var pesoMinore = array[0].peso
+    
   
     var biciPiuLeggera;
 
     for (var i = 0; i < array.length; i++) {
-        var biciSingola = array[i];
+        //destructuring 
+        var { nome, peso } = array[i]
 
-        if (biciSingola.peso < pesoMinore) {
+        if (!biciPiuLeggera || peso < biciPiuLeggera.peso) {
             
-            biciPiuLeggera = biciSingola
-            pesoMinore = biciPiuLeggera.peso
+            biciPiuLeggera = {
+                nome,
+                peso
+            }
+            
         }
     }
     //mi ritornerà un oggetto
     return biciPiuLeggera
 }
+
+
 
 //risultato della funzione lo salvo in una var 
 var laPiuLeggera = check(biciDaCorsa);
