@@ -41,6 +41,7 @@ for (let i = 0; i < squadre.length; i++) {
     var { nome, falliSubiti } = squadraDaAnalizzare
     //array di oggetti 
     specificheSquadra.push({ nome, falliSubiti })
+
     console.log(` ${nome} e i falli subiti sono ${falliSubiti} `);
 
 }

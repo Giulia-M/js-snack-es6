@@ -21,14 +21,15 @@ var biciDaCorsa = [
 
 
 function check(array) {
-    
-  
+
+
     var biciPiuLeggera;
 
     for (var i = 0; i < array.length; i++) {
         //destructuring 
         var { nome, peso } = array[i]
-
+      
+        
         if (!biciPiuLeggera || peso < biciPiuLeggera.peso) {
             
             biciPiuLeggera = {
@@ -37,6 +38,8 @@ function check(array) {
             }
             
         }
+        
+       
     }
     //mi ritornerà un oggetto
     return biciPiuLeggera
